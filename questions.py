@@ -24,7 +24,7 @@ answers = [
 correct_answers_index = [1, 2, 0, 3, 1]
 puntaje_total = 0
 # Se crea la lista con 3 tuplas, en la que cada una tiene su pregunta sus posibles respuestas y el indice de la respuesta valida
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+questions_to_ask = random.sample(list(zip(questions, answers, correct_answers_index)), k=3)
 # Se crean las tuplas con las preguntas, respuestas e indices de las respuestas correctas en base a la variable questions_to_ask
 for (preguntas, respuestas, indices) in (questions_to_ask):
 
